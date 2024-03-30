@@ -8,7 +8,7 @@ import { handleHistory } from "src/utils/handleHistory";
 
 const voiceFlow = addKeyword<BaileysProvider>(EVENTS.VOICE_NOTE)
     .addAction(async (_, {  flowDynamic }) => {
-        await flowDynamic(`dame un momento para esucharte...`)
+        await flowDynamic(`dame un segundo para escucharte...`)
     })
     .addAction(async (ctx: any, { provider, extensions, gotoFlow, state }) => {
         try{
